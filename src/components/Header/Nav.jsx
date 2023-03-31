@@ -13,7 +13,7 @@ function Nav({handleInput , value}) {
     <nav>
         <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/favourite">Favourite</Link></li>
+            <li><Link to="/favourite">Favourites</Link></li>
             <li><input type="text" value={value} placeholder="Search Movies..." onChange={(e) => handleInput(e.target.value)}/></li>
             <li className='logout-btn' onClick={handleLogout}><Link to="/logout">Logout</Link></li>
         </ul>

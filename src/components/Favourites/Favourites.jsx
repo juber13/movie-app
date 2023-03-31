@@ -1,11 +1,19 @@
-import React from 'react'
+import React , { useEffect, useState } from 'react';
+import './Favourite.css'
+import {Close} from '@material-ui/icons';
 
-const Favourites = (props) => {
+
+const Favourites = ({favourite , removeFavourite}) => {
   return (
+    <>
     <div className="moviesList">
-      {props.favourite.map((movie, index) => {
+      {favourite.length > 0 ? favourite.map((movie, index) => {
+        console.log(movie);
         return (
-          <div className="image-container d-flex justify-content-start m-3">
+          <div className="image-container d-flex justify-content-start m-3" key={movie.imdbID}>
+            <span className='remove'>
+              <Close onClick={() => removeFavourite(movie)}/>
+            </span>
             <img src={movie.Poster} alt="movie" 
              onError={({ currentTarget }) => {
               currentTarget.onerror = null; // prevents looping
@@ -14,8 +22,9 @@ const Favourites = (props) => {
             />
           </div>
         );
-      })}
+      }) : <h3 className='empty-message'> Add what u like :<code>)</code></h3>}
     </div>
+    </>
   );
 }
 
