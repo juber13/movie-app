@@ -1,4 +1,3 @@
-import React , { useEffect, useState } from 'react';
 import './Favourite.css'
 
 const Favourites = ({favourite , removeFavourite}) => {

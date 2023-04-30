@@ -1,7 +1,3 @@
-// import React, { useState } from 'react'
-import {Favorite} from '@material-ui/icons';
-
-
 const AddFavourite = () => {
   return (
     <>

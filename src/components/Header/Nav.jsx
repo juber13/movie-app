@@ -3,11 +3,6 @@ import React from 'react'
 import './nav.css';
 import { NavLink } from 'react-router-dom';
 function Nav({handleInput , value , favourite}) {
- 
-  const handleLogout = ({}) => {
-    alert("this is working na");
-  }
-  
   return (
     <div className='navbar'> 
     <nav>

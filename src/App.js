@@ -1,13 +1,12 @@
 import React , { useEffect, useState } from 'react';
 import './App.css';
-import { json, Route , Routes } from 'react-router-dom';
+import {Route , Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/Header/Nav';
 import MovieList from './components/Movies/MovieList'
 import Favourites from './components/Favourites/Favourites'
 import Logout from './components/Logout/Logout'
 import AddFavourite from './components/Movies/AddFavourite';
-import { LockOpen } from '@material-ui/icons';
 
 function App() {
   const [movies, setMovies] = useState([]);
