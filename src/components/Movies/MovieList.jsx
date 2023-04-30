@@ -4,8 +4,7 @@ const MovieList = (props) => {
   const AddFavourite = props.favouriteComponents;
   return (
     <div className="moviesList">
-      {props.movies.map((movie, index) => {
-        console.log(movie)
+      {props.movies.map((movie) => {
         return (
           <>
           <div className="movie" onClick={() => props.handleFavourite(movie)}>
