@@ -62,7 +62,7 @@ function App() {
  
   return (
     <>
-    <Nav handleInput={handleInput}/>
+    <Nav handleInput={handleInput} favourite={favourite}/>
     <Routes>
         <Route path="/" element={<MovieList  movies={movies} handleFavourite={handleFavourite} favouriteComponents={AddFavourite}/>}/>
         <Route path="/favourite" element={<Favourites favourite={favourite} setFavourite={setFavourite} removeFavourite={removeFavourite}/> }/>

@@ -55,6 +55,12 @@ li:last-of-type {
     position: relative;
 }
 
+/* li:nth-child(6){
+    margin-left: 0;
+} */
+
+/* li:nth-child(6) */
+
 .logout-btn::after{
   position: absolute;
   top: 0;
@@ -68,4 +74,10 @@ li:last-of-type {
 
 li.logout-btn:hover{
     color: red;
+}
+
+.favourite-counter{
+    /* position : relative;
+    bottom : 10px; 
+    right : 10px;  */
 }
