@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/Header/Nav';
 import MovieList from './components/Movies/MovieList'
 import Favourites from './components/Favourites/Favourites'
-import Logout from './components/Logout/Logout'
 import AddFavourite from './components/Movies/AddFavourite';
 
 function App() {
@@ -65,7 +64,6 @@ function App() {
     <Routes>
         <Route path="/" element={<MovieList  movies={movies} handleFavourite={handleFavourite} favouriteComponents={AddFavourite}/>}/>
         <Route path="/favourite" element={<Favourites favourite={favourite} setFavourite={setFavourite} removeFavourite={removeFavourite}/> }/>
-        <Route path="/logout" element={<Logout/>}/>
     </Routes>
     </>
   );
