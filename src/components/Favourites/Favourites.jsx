@@ -1,3 +1,4 @@
+import React from 'react';
 import './Favourite.css'
 
 const Favourites = ({favourite , removeFavourite}) => {
